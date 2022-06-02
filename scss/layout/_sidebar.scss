@@ -1,0 +1,37 @@
+// navbar sidebar for responsive menu //
+.offcanvas {
+  background: inherit;
+
+  &::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    content: '';
+    height: 100%;
+    position: absolute;
+    background-color: rgba(17, 17, 17, 0.85);
+
+  }
+
+  .offcanvas-header {
+    .btn-close {
+      top: 12px;
+      z-index: 1;
+      display: flex;
+      font-size: 35px;
+      position: relative;
+      background-image: none;
+      justify-content: center;
+    }
+  }
+
+  .offcanvas-body {
+    z-index: 1;
+    .navbar-nav {
+      padding-top: 35px;
+    }
+    .contact__content {
+      padding-top: 35px;
+    }
+  }
+}

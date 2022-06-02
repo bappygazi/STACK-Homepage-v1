@@ -1,0 +1,253 @@
+// hero part css //
+#hero {
+  .hero__text {
+    left: 25%;
+    bottom: 55px;
+    z-index: 1;
+  }
+
+  @media (max-width: 768px) {
+    .hero__text {
+      left: 35%;
+    }
+  }
+
+  .owl-dots {
+    left: 7%;
+    bottom: 49px;
+    position: absolute;
+
+    .owl-dot {
+      width: 16px;
+      height: 16px;
+      margin: 8px;
+      border-radius: 50%;
+      text-align: center;
+      position: relative;
+      border: 1px solid #ffffff;
+
+      span {
+        top: -2px;
+        left: -4px;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        background-color: transparent;
+      }
+
+      &:hover span {
+        background-color: #ffffff;
+      }
+
+      &.active span {
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  .owl-nav {
+    right: 8%;
+    bottom: 40px;
+    margin: 0;
+    position: absolute;
+
+    .owl-prev {
+      display: none;
+    }
+
+    .owl-next {
+      margin: 0;
+      width: 50px;
+      height: 50px;
+      font-size: 25px;
+      color: #ffffff;
+      border-radius: 50%;
+      transition: all linear .2s;
+      border: 2px solid #888888;
+      background-color: transparent;
+
+      &:hover {
+        border: 2px solid #EFB43E;
+        background-color: #EFB43E;
+      }
+    }
+
+  }
+
+
+}
+
+// aproach part css //
+#aproach {
+  padding-top: 180px;
+  background-color: #111111;
+
+  .aproach__text {
+    padding-bottom: 150px;
+
+    @media (max-width: 768px) {
+      &.aproach__text {
+        padding-bottom: 100px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &#aproach {
+      padding-top: 100px;
+    }
+  }
+}
+
+// Portfolio part css //
+#portfolio {
+  padding: 150px 0;
+  background-color: #111111;
+
+  @media (max-width: 768px) {
+    &#portfolio {
+      padding: 100px 0;
+    }
+  }
+
+  .owl-nav {
+    top: 45%;
+    left: 50%;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    .owl-prev,
+    .owl-next {
+      margin: 0;
+      width: 50px;
+      height: 50px;
+      font-size: 25px;
+      color: #ffffff;
+      position: absolute;
+      border-radius: 50%;
+      transition: all linear .2s;
+      border: 2px solid #ffffff;
+      background-color: transparent;
+
+      &:hover {
+        border: 2px solid #EFB43E;
+        background-color: #EFB43E;
+      }
+    }
+
+    .owl-prev {
+      left: 30px;
+    }
+
+    .owl-next {
+      right: 30px;
+    }
+  }
+
+  .portfolio__content {
+    padding: 200px 0;
+  }
+}
+
+// services part css //
+#services {
+  background-color: #111111;
+
+  .owl-nav {
+    right: 0;
+    margin: 0;
+    top: -95px;
+    position: absolute;
+
+    @media (max-width: 768px) {
+      &.owl-nav {
+        top: -60px;
+      }
+    }
+
+    .owl-prev,
+    .owl-next {
+      margin: 0;
+      width: 50px;
+      height: 50px;
+      font-size: 25px;
+      color: #ffffff;
+      border-radius: 50%;
+      transition: all linear .2s;
+      border: 2px solid #ffffff;
+      background-color: transparent;
+
+      &:hover {
+        border: 2px solid #EFB43E;
+        background-color: #EFB43E;
+      }
+    }
+
+    .owl-prev {
+      margin-right: 8px;
+    }
+
+    .owl-next {
+      margin-left: 8px;
+    }
+  }
+
+  .item {
+    .item__text {
+      left: 30px;
+      bottom: 40px;
+    }
+  }
+}
+
+// testimonial part css //
+#testimonial {
+  padding: 200px 0;
+  background-color: #111111;
+
+  .owl-carousel {
+    .owl-item {
+      img {
+        width: auto;
+      }
+    }
+
+    .owl-nav {
+      right: 0;
+      margin: 0;
+      top: 95px;
+      position: absolute;
+
+      .owl-prev {
+        display: none;
+      }
+
+      .owl-next {
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        color: #ffffff;
+        border-radius: 50%;
+        transition: all linear .2s;
+        border: 2px solid #ffffff;
+        background-color: transparent;
+
+        &:hover {
+          border: 2px solid #EFB43E;
+          background-color: #EFB43E;
+        }
+      }
+
+      .owl-prev {
+        margin-right: 8px;
+      }
+
+      .owl-next {
+        margin-left: 8px;
+      }
+    }
+  }
+}
