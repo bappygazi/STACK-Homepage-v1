@@ -1,5 +1,6 @@
 // hero part css //
 #hero {
+
   .hero__text {
     left: 25%;
     bottom: 55px;
@@ -12,64 +13,71 @@
     }
   }
 
-  .owl-dots {
-    left: 7%;
-    bottom: 49px;
-    position: absolute;
-
-    .owl-dot {
-      width: 16px;
-      height: 16px;
-      margin: 8px;
-      border-radius: 50%;
-      text-align: center;
-      position: relative;
-      border: 1px solid #ffffff;
-
-      span {
-        top: -2px;
-        left: -4px;
-        width: 8px;
-        height: 8px;
-        position: absolute;
-        background-color: transparent;
-      }
-
-      &:hover span {
-        background-color: #ffffff;
-      }
-
-      &.active span {
-        background-color: #ffffff;
-      }
-    }
-  }
-
-  .owl-nav {
-    right: 8%;
-    bottom: 40px;
-    margin: 0;
-    position: absolute;
-
-    .owl-prev {
-      display: none;
+  .owl-carousel {
+    &.animated {
+      animation-duration: 3s;
     }
 
-    .owl-next {
+    .owl-dots {
+      left: 7%;
+      bottom: 49px;
+      position: absolute;
+
+      .owl-dot {
+        width: 16px;
+        height: 16px;
+        margin: 8px;
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+        border: 1px solid #ffffff;
+
+        span {
+          top: -2px;
+          left: -4px;
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          background-color: transparent;
+        }
+
+        &:hover span {
+          background-color: #ffffff;
+        }
+
+        &.active span {
+          background-color: #ffffff;
+        }
+      }
+    }
+
+    .owl-nav {
+      right: 8%;
+      bottom: 40px;
       margin: 0;
-      width: 50px;
-      height: 50px;
-      font-size: 25px;
-      color: #ffffff;
-      border-radius: 50%;
-      transition: all linear .2s;
-      border: 2px solid #888888;
-      background-color: transparent;
+      position: absolute;
 
-      &:hover {
-        border: 2px solid #EFB43E;
-        background-color: #EFB43E;
+      .owl-prev {
+        display: none;
       }
+
+      .owl-next {
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        color: #ffffff;
+        border-radius: 50%;
+        transition: all linear .2s;
+        border: 2px solid #888888;
+        background-color: transparent;
+
+        &:hover {
+          border: 2px solid #F7BE00;
+          background-color: #F7BE00;
+        }
+      }
+
     }
 
   }
@@ -132,8 +140,8 @@
       background-color: transparent;
 
       &:hover {
-        border: 2px solid #EFB43E;
-        background-color: #EFB43E;
+        border: 2px solid #F7BE00;
+        background-color: #F7BE00;
       }
     }
 
@@ -180,8 +188,8 @@
       background-color: transparent;
 
       &:hover {
-        border: 2px solid #EFB43E;
-        background-color: #EFB43E;
+        border: 2px solid #F7BE00;
+        background-color: #F7BE00;
       }
     }
 
@@ -236,8 +244,8 @@
         background-color: transparent;
 
         &:hover {
-          border: 2px solid #EFB43E;
-          background-color: #EFB43E;
+          border: 2px solid #F7BE00;
+          background-color: #F7BE00;
         }
       }
 

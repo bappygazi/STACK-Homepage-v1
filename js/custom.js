@@ -4,25 +4,22 @@ $(function () {
     $(window).scroll(function () {
         var scrolling = $(this).scrollTop();
         var sticky = $(".navbar");
-        if (scrolling >= 20) {
+        if (scrolling >=100) {
             sticky.addClass("navbg");
         } else {
             sticky.removeClass("navbg");
         }
     });
-    // // // toggle navbar button //
-    // $(".navbar-toggler").on("click", function () {
-    //     $(".navbar-brand").addClass("navbar__brand-none");
-    // });
-    // $(".btn-close").on("click", function () {
-    //     $(".navbar-brand").removeClass("navbar__brand-none");
-    // });
 
     //  workplace owl-carouse
     $('#hero .owl-carousel').owlCarousel({
         center: true,
         loop: true,
         nav: true,
+        autoplay: true,
+        smartSpeed: 5000,
+        animateIn: "fadeIn",
+        animateOut: "fadeOut",
         navText: [" ", "<i class='fal fa-long-arrow-right'></i>"],
         responsive: {
             0: {
@@ -42,6 +39,8 @@ $(function () {
         margin: 30,
         nav: true,
         dots: false,
+        smartSpeed: 1250,
+        autoplay: true,
         navText: [" <i class='fal fa-long-arrow-left'> ", "<i class='fal fa-long-arrow-right'>"],
         responsive: {
             0: {
@@ -73,7 +72,7 @@ $(function () {
                 items: 3
             }
         }
-    }) 
+    })
     //  services owl-carouse
     $('#testimonial .owl-carousel').owlCarousel({
         loop: true,

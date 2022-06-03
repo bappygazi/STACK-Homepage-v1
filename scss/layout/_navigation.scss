@@ -1,10 +1,11 @@
 // navbar part css //
 .navbg {
+  padding: 0 !important;
   background-color: #111111;
 
   .navbar-brand {
     img {
-      width: 35% !important;
+      width: 57% !important;
     }
     @media (max-width: 768px) {
       img {
@@ -17,13 +18,16 @@
     top: auto !important;
   }
 
-  .collapse {
+  .navbar-collapse {
     top: auto !important;
   }
 }
 
 .navbar {
-  padding-top: 12px !important;
+  padding-top: 12px;
+  padding-bottom: 0;
+  transition: all linear .5s;
+
 
   .navbar-nav {
     .dropdown {
@@ -59,7 +63,7 @@
   .navbar-brand {
     img {
       width: 100%;
-      transition: all linear .3s;
+      transition: all linear .5s;
     }
   }
 

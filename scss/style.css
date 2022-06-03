@@ -55,7 +55,7 @@ body {
 }
 
 .navbar .navbar-nav .nav-item .nav-link.active, .navbar .navbar-nav .nav-item .nav-link:hover {
-  color: #EFB43E;
+  color: #F7BE00;
 }
 
 #hero .hero__text {
@@ -102,8 +102,8 @@ body {
 }
 
 #aproach .aproach__text a:hover i {
-  background-color: #EFB43E;
-  border: 1px solid #EFB43E;
+  background-color: #F7BE00;
+  border: 1px solid #F7BE00;
 }
 
 @media (max-width: 768px) {
@@ -113,17 +113,17 @@ body {
 }
 
 #portfolio .portfolio__head-text h4 {
-  color: #EFB43E;
+  color: #F7BE00;
   font-size: 22px;
 }
 
 #portfolio .portfolio__head-text h3 {
-  color: #EFB43E;
+  color: #F7BE00;
   font-size: 60px;
 }
 
 #portfolio .portfolio__text h3 {
-  color: #EFB43E;
+  color: #F7BE00;
   font-size: 35px;
   font-weight: 600;
 }
@@ -151,8 +151,8 @@ body {
 }
 
 #portfolio .portfolio__text a:hover i {
-  background-color: #EFB43E;
-  border: 1px solid #EFB43E;
+  background-color: #F7BE00;
+  border: 1px solid #F7BE00;
 }
 
 @media (max-width: 768px) {
@@ -165,12 +165,12 @@ body {
 }
 
 #services .services__head-text h4 {
-  color: #EFB43E;
+  color: #F7BE00;
   font-size: 22px;
 }
 
 #services .services__head-text h3 {
-  color: #EFB43E;
+  color: #F7BE00;
   font-size: 40px;
 }
 
@@ -202,7 +202,7 @@ body {
 }
 
 #footer .footer__logo h6 {
-  color: #EFB43E;
+  color: #F7BE00;
   font-size: 22px;
   font-weight: 700;
 }
@@ -226,8 +226,8 @@ body {
 }
 
 #footer .footer__logo h3 a:hover i {
-  border: 1px solid #EFB43E;
-  background-color: #EFB43E;
+  border: 1px solid #F7BE00;
+  background-color: #F7BE00;
 }
 
 #footer .footer__text h4 {
@@ -258,11 +258,12 @@ body {
 }
 
 .navbg {
+  padding: 0 !important;
   background-color: #111111;
 }
 
 .navbg .navbar-brand img {
-  width: 35% !important;
+  width: 57% !important;
 }
 
 @media (max-width: 768px) {
@@ -275,12 +276,15 @@ body {
   top: auto !important;
 }
 
-.navbg .collapse {
+.navbg .navbar-collapse {
   top: auto !important;
 }
 
 .navbar {
-  padding-top: 12px !important;
+  padding-top: 12px;
+  padding-bottom: 0;
+  -webkit-transition: all linear .5s;
+  transition: all linear .5s;
 }
 
 .navbar .navbar-nav .dropdown:hover {
@@ -307,8 +311,8 @@ body {
 
 .navbar .navbar-brand img {
   width: 100%;
-  -webkit-transition: all linear .3s;
-  transition: all linear .3s;
+  -webkit-transition: all linear .5s;
+  transition: all linear .5s;
 }
 
 .navbar .navbar-collapse {
@@ -432,13 +436,18 @@ body {
   }
 }
 
-#hero .owl-dots {
+#hero .owl-carousel.animated {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+#hero .owl-carousel .owl-dots {
   left: 7%;
   bottom: 49px;
   position: absolute;
 }
 
-#hero .owl-dots .owl-dot {
+#hero .owl-carousel .owl-dots .owl-dot {
   width: 16px;
   height: 16px;
   margin: 8px;
@@ -448,7 +457,7 @@ body {
   border: 1px solid #ffffff;
 }
 
-#hero .owl-dots .owl-dot span {
+#hero .owl-carousel .owl-dots .owl-dot span {
   top: -2px;
   left: -4px;
   width: 8px;
@@ -457,26 +466,26 @@ body {
   background-color: transparent;
 }
 
-#hero .owl-dots .owl-dot:hover span {
+#hero .owl-carousel .owl-dots .owl-dot:hover span {
   background-color: #ffffff;
 }
 
-#hero .owl-dots .owl-dot.active span {
+#hero .owl-carousel .owl-dots .owl-dot.active span {
   background-color: #ffffff;
 }
 
-#hero .owl-nav {
+#hero .owl-carousel .owl-nav {
   right: 8%;
   bottom: 40px;
   margin: 0;
   position: absolute;
 }
 
-#hero .owl-nav .owl-prev {
+#hero .owl-carousel .owl-nav .owl-prev {
   display: none;
 }
 
-#hero .owl-nav .owl-next {
+#hero .owl-carousel .owl-nav .owl-next {
   margin: 0;
   width: 50px;
   height: 50px;
@@ -489,9 +498,9 @@ body {
   background-color: transparent;
 }
 
-#hero .owl-nav .owl-next:hover {
-  border: 2px solid #EFB43E;
-  background-color: #EFB43E;
+#hero .owl-carousel .owl-nav .owl-next:hover {
+  border: 2px solid #F7BE00;
+  background-color: #F7BE00;
 }
 
 #aproach {
@@ -553,8 +562,8 @@ body {
 
 #portfolio .owl-nav .owl-prev:hover,
 #portfolio .owl-nav .owl-next:hover {
-  border: 2px solid #EFB43E;
-  background-color: #EFB43E;
+  border: 2px solid #F7BE00;
+  background-color: #F7BE00;
 }
 
 #portfolio .owl-nav .owl-prev {
@@ -602,8 +611,8 @@ body {
 
 #services .owl-nav .owl-prev:hover,
 #services .owl-nav .owl-next:hover {
-  border: 2px solid #EFB43E;
-  background-color: #EFB43E;
+  border: 2px solid #F7BE00;
+  background-color: #F7BE00;
 }
 
 #services .owl-nav .owl-prev {
@@ -653,8 +662,8 @@ body {
 }
 
 #testimonial .owl-carousel .owl-nav .owl-next:hover {
-  border: 2px solid #EFB43E;
-  background-color: #EFB43E;
+  border: 2px solid #F7BE00;
+  background-color: #F7BE00;
 }
 
 #testimonial .owl-carousel .owl-nav .owl-prev {
