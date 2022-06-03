@@ -60,6 +60,7 @@ $(function () {
         margin: 30,
         nav: true,
         dots: false,
+        smartSpeed: 1200,
         navText: [" <i class='fal fa-long-arrow-left'></i> ", "<i class='fal fa-long-arrow-right'></i>"],
         responsive: {
             0: {
@@ -79,6 +80,7 @@ $(function () {
         margin: 30,
         nav: true,
         dots: false,
+        smartSpeed: 1200,
         navText: [" ", "<i class='fal fa-long-arrow-right'></i>"],
         responsive: {
             0: {

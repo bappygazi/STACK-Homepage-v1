@@ -102,6 +102,9 @@ body {
 }
 
 #aproach .aproach__text a:hover i {
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
   background-color: #F7BE00;
   border: 1px solid #F7BE00;
 }
@@ -151,6 +154,9 @@ body {
 }
 
 #portfolio .portfolio__text a:hover i {
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
   background-color: #F7BE00;
   border: 1px solid #F7BE00;
 }
@@ -204,7 +210,7 @@ body {
 #footer .footer__logo h6 {
   color: #F7BE00;
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 #footer .footer__logo h3 {
@@ -263,7 +269,7 @@ body {
 }
 
 .navbg .navbar-brand img {
-  width: 57% !important;
+  width: 40% !important;
 }
 
 @media (max-width: 768px) {
@@ -310,7 +316,7 @@ body {
 }
 
 .navbar .navbar-brand img {
-  width: 100%;
+  width: 75%;
   -webkit-transition: all linear .5s;
   transition: all linear .5s;
 }
