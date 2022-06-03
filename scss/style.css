@@ -87,6 +87,7 @@ body {
 #aproach .aproach__text a {
   font-size: 18px;
   font-weight: 600;
+  line-height: 42px;
 }
 
 #aproach .aproach__text a i {
@@ -139,6 +140,7 @@ body {
 #portfolio .portfolio__text a {
   font-size: 18px;
   font-weight: 600;
+  line-height: 42px;
 }
 
 #portfolio .portfolio__text a i {
