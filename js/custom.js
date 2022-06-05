@@ -4,7 +4,7 @@ $(function () {
     $(window).scroll(function () {
         var scrolling = $(this).scrollTop();
         var sticky = $(".navbar");
-        if (scrolling >=100) {
+        if (scrolling >= 100) {
             sticky.addClass("navbg");
         } else {
             sticky.removeClass("navbg");
@@ -40,7 +40,6 @@ $(function () {
         nav: true,
         dots: false,
         smartSpeed: 1250,
-        autoplay: true,
         navText: [" <i class='fal fa-long-arrow-left'> ", "<i class='fal fa-long-arrow-right'>"],
         responsive: {
             0: {
@@ -93,5 +92,11 @@ $(function () {
                 items: 1
             }
         }
-    })
+    });
+    // // parallx logo 
+    // let brand__logo = document.getElementById('brand__logo')
+    // window.addEventListener('scroll', function () {
+    //     let value = this.window.scrollY;
+    //     brand__logo.style.width = value + 70 + '%';
+    // });
 });
