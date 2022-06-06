@@ -323,16 +323,6 @@ body {
   background-color: #111111;
 }
 
-.navbg .navbar-brand img {
-  width: 40% !important;
-}
-
-@media (max-width: 768px) {
-  .navbg .navbar-brand img {
-    width: 200px !important;
-  }
-}
-
 .navbg .navbar-toggler {
   top: auto !important;
 }
@@ -341,11 +331,25 @@ body {
   top: auto !important;
 }
 
+.parallax__logo .navbar-brand img {
+  width: 40% !important;
+}
+
+@media (max-width: 768px) {
+  .parallax__logo .navbar-brand img {
+    width: 200px !important;
+  }
+}
+
+.parallax__logo .navbar-collapse {
+  top: 0px !important;
+}
+
 .navbar {
   padding-top: 12px;
   padding-bottom: 0;
-  -webkit-transition: all linear .3s;
-  transition: all linear .3s;
+  -webkit-transition: linear .4s;
+  transition: linear .4s;
 }
 
 .navbar .navbar-nav .dropdown:hover {

@@ -4,12 +4,25 @@ $(function () {
     $(window).scroll(function () {
         var scrolling = $(this).scrollTop();
         var sticky = $(".navbar");
-        if (scrolling >= 100) {
+        if (scrolling >= 300) {
             sticky.addClass("navbg");
         } else {
             sticky.removeClass("navbg");
         }
     });
+
+    //    parallax logo
+
+    $(window).scroll(function () {
+        var scrolling = $(this).scrollTop();
+        var sticky = $(".navbar");
+        if (scrolling >= 100) {
+            sticky.addClass("parallax__logo");
+        } else {
+            sticky.removeClass("parallax__logo");
+        }
+    });
+
 
     //  workplace owl-carouse
     $('#hero .owl-carousel').owlCarousel({
