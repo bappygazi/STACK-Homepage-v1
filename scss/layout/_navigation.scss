@@ -14,6 +14,9 @@
 }
 
 .parallax__logo {
+  .navbar-toggler {
+    top: auto !important;
+  }
   .navbar-brand {
     img {
       width: 40% !important;

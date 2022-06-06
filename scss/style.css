@@ -331,6 +331,10 @@ body {
   top: auto !important;
 }
 
+.parallax__logo .navbar-toggler {
+  top: auto !important;
+}
+
 .parallax__logo .navbar-brand img {
   width: 40% !important;
 }
