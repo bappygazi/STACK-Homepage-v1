@@ -184,6 +184,46 @@ body {
   font-size: 40px;
 }
 
+#services .services__head-text p {
+  font-size: 18px;
+}
+
+#services .services__head-text a {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+#services .services__head-text a i {
+  width: 28px;
+  height: 28px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 50%;
+  -webkit-transition: all linear .2s;
+  transition: all linear .2s;
+  border: 1px solid #ffffff;
+}
+
+#services .services__head-text a:hover i {
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  margin-right: 8px !important;
+  background-color: #F7BE00;
+  border: 1px solid #F7BE00;
+}
+
+@media (max-width: 768px) {
+  #services .services__head-text h4 {
+    padding-top: 50px;
+  }
+  #services .services__head-text h3 {
+    font-size: 35px;
+  }
+}
+
 #services .item .item__text {
   font-size: 30px;
   font-weight: 400;
@@ -268,6 +308,15 @@ body {
   font-size: 16px;
 }
 
+@media (max-width: 768px) {
+  #footer .footer__text p {
+    padding-top: 15px;
+  }
+  #footer .footer__text .social__icon {
+    padding-top: 0 !important;
+  }
+}
+
 .navbg {
   min-height: 70px;
   padding: 0 !important;
@@ -280,7 +329,7 @@ body {
 
 @media (max-width: 768px) {
   .navbg .navbar-brand img {
-    width: 60% !important;
+    width: 200px !important;
   }
 }
 
@@ -295,8 +344,8 @@ body {
 .navbar {
   padding-top: 12px;
   padding-bottom: 0;
-  -webkit-transition: all linear .5s;
-  transition: all linear .5s;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
 }
 
 .navbar .navbar-nav .dropdown:hover {
@@ -334,11 +383,11 @@ body {
 
 @media (max-width: 768px) {
   .navbar .navbar-brand {
-    width: 60%;
+    width: 80%;
     margin-right: 0;
   }
   .navbar .navbar-brand img {
-    width: 80%;
+    width: 295px;
   }
   .navbar .navbar-collapse {
     top: 0;
@@ -384,7 +433,8 @@ body {
 
 @media (max-width: 768px) {
   .navbar .navbar-toggler {
-    top: 0px;
+    padding: 0;
+    top: -30px;
   }
 }
 
@@ -436,15 +486,23 @@ body {
   padding-top: 35px;
 }
 
-#hero .hero__text {
+#hero .item {
+  height: 100vh;
+  background-size: cover !important;
+  background-position: 24% !important;
+  background-repeat: no-repeat !important;
+}
+
+#hero .item .hero__text {
   left: 25%;
   bottom: 55px;
   z-index: 1;
 }
 
 @media (max-width: 768px) {
-  #hero .hero__text {
-    left: 35%;
+  #hero .item .hero__text {
+    left: 9%;
+    bottom: 110px;
   }
 }
 
@@ -546,21 +604,15 @@ body {
 
 #portfolio {
   padding: 150px 0;
+  overflow: hidden;
   background-color: #111111;
 }
 
-#portfolio .portfolio__text a i {
-  top: 50%;
-  right: auto;
-  margin-left: 30px;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-}
-
-@media (max-width: 768px) {
-  #portfolio#portfolio {
-    padding: 100px 0;
-  }
+#portfolio .item {
+  height: 100vh;
+  background-size: cover !important;
+  background-position: 27% !important;
+  background-repeat: no-repeat !important;
 }
 
 #portfolio .owl-nav {
@@ -602,8 +654,26 @@ body {
   right: 30px;
 }
 
+#portfolio .portfolio__text a i {
+  top: 50%;
+  right: auto;
+  margin-left: 30px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
 #portfolio .portfolio__content {
   padding: 200px 0;
+}
+
+@media (max-width: 768px) {
+  #portfolio#portfolio {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  #portfolio .item {
+    background-position: left;
+  }
 }
 
 #services {
@@ -656,6 +726,20 @@ body {
   bottom: 40px;
 }
 
+#services a i {
+  top: 50%;
+  right: auto;
+  margin-left: 30px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+@media (max-width: 768px) {
+  #services#services .services__head-text {
+    border-top: 1px solid #888888;
+  }
+}
+
 #testimonial {
   padding: 200px 0;
   background-color: #111111;
@@ -700,5 +784,39 @@ body {
 
 #testimonial .owl-carousel .owl-nav .owl-next {
   margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  #testimonial#testimonial {
+    padding-top: 120px;
+  }
+  #testimonial#testimonial .owl-dots {
+    left: 0;
+    bottom: -60px;
+    position: absolute;
+  }
+  #testimonial#testimonial .owl-dots .owl-dot {
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    border: 1px solid #ffffff;
+  }
+  #testimonial#testimonial .owl-dots .owl-dot span {
+    top: -2px;
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background-color: transparent;
+  }
+  #testimonial#testimonial .owl-dots .owl-dot:hover span {
+    background-color: #ffffff;
+  }
+  #testimonial#testimonial .owl-dots .owl-dot.active span {
+    background-color: #ffffff;
+  }
 }
 /*# sourceMappingURL=style.css.map */

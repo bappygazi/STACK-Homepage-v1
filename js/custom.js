@@ -23,9 +23,11 @@ $(function () {
         navText: [" ", "<i class='fal fa-long-arrow-right'></i>"],
         responsive: {
             0: {
+                nav: false,
                 items: 1
+
             },
-            600: {
+            750: {
                 items: 1
             },
             1000: {
@@ -43,9 +45,11 @@ $(function () {
         navText: [" <i class='fal fa-long-arrow-left'> ", "<i class='fal fa-long-arrow-right'>"],
         responsive: {
             0: {
-                items: 1
+                nav: false,
+                margin: 15,
+                items: 1.1
             },
-            600: {
+            750: {
                 items: 1
             },
             1000: {
@@ -63,10 +67,12 @@ $(function () {
         navText: [" <i class='fal fa-long-arrow-left'></i> ", "<i class='fal fa-long-arrow-right'></i>"],
         responsive: {
             0: {
-                items: 1
+                nav: false,
+                margin: 20,
+                items: 1.1
             },
-            600: {
-                items: 2
+            750: {
+                items: 3
             },
             1920: {
                 items: 3
@@ -83,9 +89,11 @@ $(function () {
         navText: [" ", "<i class='fal fa-long-arrow-right'></i>"],
         responsive: {
             0: {
+                nav: false,
+                dots: true,
                 items: 1
             },
-            600: {
+            750: {
                 items: 1
             },
             1920: {
