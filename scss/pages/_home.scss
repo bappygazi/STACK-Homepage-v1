@@ -134,10 +134,20 @@
 
   .loin__slide {
     .item {
-      height: 94vh;
+      height: 740px;
       background-size: cover !important;
-      background-position: 27% !important;
+      background-position: 15% !important;
       background-repeat: no-repeat !important;
+    }
+    @media (max-width: 768px) {
+      .item {
+        height: 400px;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .item {
+        height: 500px;
+      }
     }
   }
 
@@ -368,6 +378,5 @@
         }
       }
     }
-
   }
 }
