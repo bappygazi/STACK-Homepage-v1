@@ -127,13 +127,14 @@
 
 // Portfolio part css //
 #portfolio {
-  padding: 150px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   overflow: hidden;
   background-color: #111111;
 
   .loin__slide {
     .item {
-      height: 93vh;
+      height: 94vh;
       background-size: cover !important;
       background-position: 27% !important;
       background-repeat: no-repeat !important;
@@ -194,12 +195,20 @@
 
   @media (max-width: 768px) {
     &#portfolio {
-      padding-top: 100px;
-      padding-bottom: 50px;
+      padding: 50px 0;
     }
 
     .item {
       background-position: left;
+    }
+
+    .portfolio__content {
+      padding: 50px 0;
+    }
+
+    .portfolio__text {
+      padding-bottom: 0 !important;
+      border: 0 !important;
     }
   }
 

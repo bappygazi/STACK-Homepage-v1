@@ -169,9 +169,6 @@ body {
   #portfolio#portfolio .portfolio__head-text h3 {
     font-size: 40px;
   }
-  #portfolio#portfolio .portfolio__content {
-    padding: 100px 0;
-  }
 }
 
 #services .services__head-text h4 {
@@ -237,7 +234,7 @@ body {
 
 @media (max-width: 768px) {
   #testimonial .testimonial__text p {
-    padding-right: 60px;
+    padding-right: 0px;
   }
 }
 
@@ -625,13 +622,14 @@ body {
 }
 
 #portfolio {
-  padding: 150px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   overflow: hidden;
   background-color: #111111;
 }
 
 #portfolio .loin__slide .item {
-  height: 93vh;
+  height: 94vh;
   background-size: cover !important;
   background-position: 27% !important;
   background-repeat: no-repeat !important;
@@ -690,11 +688,17 @@ body {
 
 @media (max-width: 768px) {
   #portfolio#portfolio {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding: 50px 0;
   }
   #portfolio .item {
     background-position: left;
+  }
+  #portfolio .portfolio__content {
+    padding: 50px 0;
+  }
+  #portfolio .portfolio__text {
+    padding-bottom: 0 !important;
+    border: 0 !important;
   }
 }
 
