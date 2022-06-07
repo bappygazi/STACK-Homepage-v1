@@ -131,12 +131,15 @@
   overflow: hidden;
   background-color: #111111;
 
-  .item {
-    height: 100vh;
-    background-size: cover !important;
-    background-position: 27% !important;
-    background-repeat: no-repeat !important;
+  .loin__slide {
+    .item {
+      height: 100vh;
+      background-size: cover !important;
+      background-position: 27% !important;
+      background-repeat: no-repeat !important;
+    }
   }
+
 
   .owl-nav {
     top: 45%;

@@ -1,7 +1,6 @@
 // navbar part css //
 .navbg {
   min-height: 70px;
-  padding: 0 !important;
   background-color: #111111;
 
   .navbar-toggler {
@@ -14,10 +13,14 @@
 }
 
 .parallax__logo {
+  padding: 0 !important;
+
   .navbar-toggler {
     top: auto !important;
   }
+
   .navbar-brand {
+    padding: 0 !important;
     img {
       width: 40% !important;
     }
@@ -35,9 +38,8 @@
 }
 
 .navbar {
-  padding-top: 12px;
-  padding-bottom: 0;
-  transition: linear .4s;
+  padding: 0;
+  transition: ease-out .4s;
 
 
   .navbar-nav {
@@ -72,15 +74,20 @@
   }
 
   .navbar-brand {
+    padding-top: 20px;
+    transition: all linear .5s;
+
     img {
+      top: 0;
+      left: 0;
       width: 75%;
       transition: all linear .5s;
     }
   }
 
-  .navbar-collapse {
-    top: -40px;
-    position: relative;
+  .navbar-nav {
+    right: 0;
+    top: 21px;
   }
 
   @media (max-width: 768px) {

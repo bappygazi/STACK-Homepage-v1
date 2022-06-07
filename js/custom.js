@@ -81,7 +81,7 @@ $(function () {
         responsive: {
             0: {
                 nav: false,
-                margin: 20,
+                margin: 15,
                 items: 1.1
             },
             750: {

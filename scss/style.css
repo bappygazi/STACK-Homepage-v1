@@ -319,7 +319,6 @@ body {
 
 .navbg {
   min-height: 70px;
-  padding: 0 !important;
   background-color: #111111;
 }
 
@@ -331,8 +330,16 @@ body {
   top: auto !important;
 }
 
+.parallax__logo {
+  padding: 0 !important;
+}
+
 .parallax__logo .navbar-toggler {
   top: auto !important;
+}
+
+.parallax__logo .navbar-brand {
+  padding: 0 !important;
 }
 
 .parallax__logo .navbar-brand img {
@@ -350,10 +357,9 @@ body {
 }
 
 .navbar {
-  padding-top: 12px;
-  padding-bottom: 0;
-  -webkit-transition: linear .4s;
-  transition: linear .4s;
+  padding: 0;
+  -webkit-transition: ease-out .4s;
+  transition: ease-out .4s;
 }
 
 .navbar .navbar-nav .dropdown:hover {
@@ -378,15 +384,23 @@ body {
   background-color: transparent;
 }
 
+.navbar .navbar-brand {
+  padding-top: 20px;
+  -webkit-transition: all linear .5s;
+  transition: all linear .5s;
+}
+
 .navbar .navbar-brand img {
+  top: 0;
+  left: 0;
   width: 75%;
   -webkit-transition: all linear .5s;
   transition: all linear .5s;
 }
 
-.navbar .navbar-collapse {
-  top: -40px;
-  position: relative;
+.navbar .navbar-nav {
+  right: 0;
+  top: 21px;
 }
 
 @media (max-width: 768px) {
@@ -616,7 +630,7 @@ body {
   background-color: #111111;
 }
 
-#portfolio .item {
+#portfolio .loin__slide .item {
   height: 100vh;
   background-size: cover !important;
   background-position: 27% !important;
