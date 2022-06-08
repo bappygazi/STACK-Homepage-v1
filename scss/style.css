@@ -58,9 +58,15 @@ body {
   color: #F7BE00;
 }
 
-#hero .hero__text {
+#hero .hero__text h5 {
   font-size: 30px;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  #hero .hero__text h5 {
+    font-size: 20px;
+  }
 }
 
 #aproach .aproach__text h4 {
@@ -112,8 +118,17 @@ body {
 }
 
 @media (max-width: 768px) {
-  #aproach#aproach .aproach__text h3 {
+  #aproach .aproach__text h4 {
+    font-size: 18px;
+  }
+  #aproach .aproach__text h3 {
     font-size: 40px;
+  }
+  #aproach .aproach__text h5 {
+    font-size: 22px;
+  }
+  #aproach .aproach__text p {
+    font-size: 16px;
   }
 }
 
@@ -125,6 +140,15 @@ body {
 #portfolio .portfolio__head-text h3 {
   color: #F7BE00;
   font-size: 60px;
+}
+
+@media (max-width: 768px) {
+  #portfolio .portfolio__head-text h4 {
+    font-size: 18px;
+  }
+  #portfolio .portfolio__head-text h3 {
+    font-size: 40px;
+  }
 }
 
 #portfolio .portfolio__text h3 {
@@ -166,8 +190,11 @@ body {
 }
 
 @media (max-width: 768px) {
-  #portfolio#portfolio .portfolio__head-text h3 {
-    font-size: 40px;
+  #portfolio .portfolio__text h3 {
+    font-size: 24px;
+  }
+  #portfolio .portfolio__text p {
+    font-size: 16px;
   }
 }
 
@@ -215,9 +242,13 @@ body {
 @media (max-width: 768px) {
   #services .services__head-text h4 {
     padding-top: 50px;
+    font-size: 18px;
   }
   #services .services__head-text h3 {
-    font-size: 35px;
+    font-size: 40px;
+  }
+  #services .services__head-text p {
+    font-size: 16px;
   }
 }
 
@@ -232,12 +263,6 @@ body {
   padding-right: 115px;
 }
 
-@media (max-width: 768px) {
-  #testimonial .testimonial__text p {
-    padding-right: 0px;
-  }
-}
-
 #testimonial .testimonial__text .name {
   font-size: 22px;
   font-weight: 700;
@@ -246,6 +271,19 @@ body {
 #testimonial .testimonial__text .business__name {
   font-size: 18px;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  #testimonial .testimonial__text p {
+    padding-right: 0px;
+    font-size: 16px;
+  }
+  #testimonial .testimonial__text .name {
+    font-size: 16px;
+  }
+  #testimonial .testimonial__text .business__name {
+    font-size: 16px;
+  }
 }
 
 #footer .footer__logo h6 {
@@ -306,6 +344,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  #footer .footer__logo h6 {
+    font-size: 16px;
+  }
+  #footer .footer__logo h3 {
+    font-size: 30px;
+  }
+  #footer .footer__text h4 {
+    font-size: 18px;
+  }
   #footer .footer__text p {
     padding-top: 15px;
   }
@@ -514,7 +561,7 @@ body {
 
 #hero .item .hero__text {
   left: 25%;
-  bottom: 55px;
+  bottom: 50px;
   z-index: 1;
 }
 
