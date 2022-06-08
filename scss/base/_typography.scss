@@ -19,9 +19,14 @@
 
 // hero part css //
 #hero {
-  .hero__text {
+  .hero__text h5 {
     font-size: 30px;
     font-weight: 400;
+  }
+  @media (max-width: 768px) {
+    .hero__text h5 {
+      font-size: 20px;
+    }
   }
 }
 
@@ -74,14 +79,21 @@
         border: 1px solid #F7BE00;
       }
     }
-  }
+    @media (max-width: 768px) {
+      h4 {
+        font-size: 18px;
+      }
 
-  @media (max-width: 768px) {
-    &#aproach {
-      .aproach__text {
-        h3 {
-          font-size: 40px;
-        }
+      h3 {
+        font-size: 40px;
+      }
+
+      h5 {
+        font-size: 22px;
+      }
+
+      p{
+        font-size: 16px;
       }
     }
   }
@@ -98,6 +110,15 @@
     h3 {
       color: #F7BE00;
       font-size: 60px;
+    }
+    @media (max-width: 768px) {
+      h4 {
+        font-size: 18px;
+      }
+
+      h3 {
+        font-size: 40px;
+      }
     }
   }
 
@@ -138,14 +159,14 @@
         border: 1px solid #F7BE00;
       }
     }
-  }
+    @media (max-width: 768px) {
 
-  @media (max-width: 768px) {
-    &#portfolio {
-      .portfolio__head-text {
-        h3 {
-          font-size: 40px;
-        }
+      h3 {
+        font-size: 24px;
+      }
+
+      p{
+        font-size: 16px;
       }
     }
   }
@@ -197,10 +218,14 @@
     @media (max-width: 768px) {
       h4 {
         padding-top: 50px;
+        font-size: 18px;
       }
-
+      
       h3 {
-        font-size: 35px;
+        font-size: 40px;
+      }
+      p {
+        font-size: 16px;
       }
     }
 
@@ -223,12 +248,6 @@
       padding-right: 115px;
     }
 
-    @media (max-width: 768px) {
-      p {
-        padding-right: 0px;
-      }
-    }
-
     .name {
       font-size: 22px;
       font-weight: 700;
@@ -237,6 +256,18 @@
     .business__name {
       font-size: 18px;
       font-weight: 400;
+    }
+    @media (max-width: 768px) {
+      p {
+        padding-right: 0px;
+        font-size: 16px;
+      }
+      .name {
+        font-size: 16px;
+      }
+      .business__name {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -316,8 +347,18 @@
   }
 
   @media (max-width: 768px) {
-
+    .footer__logo {
+      h6 {
+        font-size: 16px;
+      }
+      h3 {
+        font-size: 30px;
+      }
+    }
     .footer__text {
+      h4 {
+        font-size: 18px;
+      }
       p {
         padding-top: 15px;
       }
