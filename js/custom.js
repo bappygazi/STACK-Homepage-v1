@@ -92,7 +92,7 @@ $(function () {
             }
         }
     })
-    //  services owl-carouse
+    //  testimonial owl-carouse
     $('#testimonial .owl-carousel').owlCarousel({
         loop: true,
         margin: 30,
