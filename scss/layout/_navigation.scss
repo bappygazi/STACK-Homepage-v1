@@ -74,7 +74,7 @@
   }
 
   .navbar-brand {
-    padding-top: 20px;
+    padding-top: 0;
     transition: all linear .5s;
 
     img {
@@ -87,7 +87,7 @@
 
   .navbar-nav {
     right: 0;
-    top: 21px;
+    top: 20px;
   }
 
   @media (max-width: 768px) {
@@ -144,7 +144,7 @@
   @media (max-width: 768px) {
     .navbar-toggler {
       padding: 0;
-      top: -30px;
+      top: -10px;
     }
   }
 }

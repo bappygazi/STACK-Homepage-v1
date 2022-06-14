@@ -134,7 +134,7 @@
 
   .loin__slide {
     .item {
-      height: 740px;
+      height: 640px;
       background-size: cover !important;
       background-position: 15% !important;
       background-repeat: no-repeat !important;
@@ -229,9 +229,9 @@
   background-color: #111111;
 
   .owl-nav {
-    right: 0;
+    left: 0;
     margin: 0;
-    top: -95px;
+    bottom: -95px;
     position: absolute;
 
     @media (max-width: 768px) {
