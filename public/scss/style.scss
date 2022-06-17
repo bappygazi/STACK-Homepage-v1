@@ -1,0 +1,13 @@
+// common scss //
+@import "vendors/normalize";
+
+// all typography scss //
+@import "base/typography";
+
+// all layouts scss //
+@import "layout/navigation";
+@import "layout/footer";
+@import "layout/sidebar";
+
+// pages scss //
+@import "pages/home";

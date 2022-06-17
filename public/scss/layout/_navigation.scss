@@ -1,0 +1,150 @@
+// navbar part css //
+.navbg {
+  min-height: 70px;
+  background-color: #111111;
+
+  .navbar-toggler {
+    top: auto !important;
+  }
+
+  .navbar-collapse {
+    top: auto !important;
+  }
+}
+
+.parallax__logo {
+  padding: 0 !important;
+
+  .navbar-toggler {
+    top: auto !important;
+  }
+
+  .navbar-brand {
+    padding: 0 !important;
+    img {
+      width: 40% !important;
+    }
+
+    @media (max-width: 768px) {
+      img {
+        width: 200px !important;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    top: 0px !important;
+  }
+}
+
+.navbar {
+  padding: 0;
+  transition: ease-out .4s;
+
+
+  .navbar-nav {
+    .dropdown {
+      &:hover {
+        border-radius: 0;
+        background-color: #111111;
+
+      }
+
+      &:hover {
+        .dropdown-menu {
+          margin-top: 0;
+          display: block;
+        }
+      }
+
+      .dropdown-menu {
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        padding-left: 20px;
+        background-color: #111111;
+
+        .dropdown-item {
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-brand {
+    padding-top: 0;
+    transition: all linear .5s;
+
+    img {
+      top: 0;
+      left: 0;
+      width: 75%;
+      transition: all linear .5s;
+    }
+  }
+
+  .navbar-nav {
+    right: 0;
+    top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .navbar-brand {
+      width: 80%;
+      margin-right: 0;
+
+      img {
+        width: 295px;
+      }
+    }
+
+    .navbar-collapse {
+      top: 0;
+      padding: 30px 0;
+      background-color: #111111;
+      box-shadow: 0 3px 10px 1px #1a1a1a;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-brand {
+      width: 60%;
+      margin-right: 0;
+
+      img {
+        width: 80%;
+      }
+    }
+
+    .navbar-collapse {
+      top: 0;
+      padding: 30px 0;
+      background-color: #111111;
+      box-shadow: 0 3px 10px 1px #1a1a1a;
+    }
+  }
+
+  .navbar__brand-none {
+    display: none;
+  }
+
+  .navbar-toggler {
+    top: 0;
+    font-size: 30px;
+    color: #ffffff;
+    position: relative;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      padding: 0;
+      top: -10px;
+    }
+  }
+}

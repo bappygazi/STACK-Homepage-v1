@@ -430,16 +430,14 @@ body {
 
 .navbar .navbar-brand {
   padding-top: 0;
-  -webkit-transition: all linear .5s;
-  transition: all linear .5s;
 }
 
 .navbar .navbar-brand img {
   top: 0;
   left: 0;
   width: 75%;
-  -webkit-transition: all linear .5s;
-  transition: all linear .5s;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
 }
 
 .navbar .navbar-nav {
