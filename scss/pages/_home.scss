@@ -415,6 +415,7 @@
         ul {
           margin: 0;
           border: 0;
+          min-width: 8rem;
           border-radius: 0;
           background-color: #111111;
 
@@ -458,6 +459,7 @@
   .load__more-btn {
     a {
       margin-right: 45px;
+
       i {
         top: 50%;
         right: auto;
@@ -467,4 +469,25 @@
 
     }
   }
+
+  @media (max-width: 768px) {
+    .filter__header {
+      .project__size {
+        padding-right: 8px;
+      }
+
+      .project__view {
+        .grid__icon {
+          margin-right: 8px !important;
+        }
+        .grid__icon,
+        .list__icon {
+          img {
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+
 }
