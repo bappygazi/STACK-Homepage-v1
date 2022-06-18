@@ -125,6 +125,7 @@
       box-shadow: 0 3px 10px 1px #1a1a1a;
     }
   }
+
   @media (min-width: 992px) and (max-width: 1199px) {
 
     .navbar-brand {
@@ -132,14 +133,16 @@
         width: 60%;
       }
     }
-   .navbar-nav {
-    .nav-item {
-      .nav-link{
-        padding: 0 7px !important;
+
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding: 0 7px !important;
+        }
       }
     }
-   }
   }
+
   .navbar__brand-none {
     display: none;
   }
@@ -174,4 +177,25 @@
       width: 100% !important;
     }
   }
+
+  @media (max-width: 768px) {
+    .navbar-brand {
+      width: auto;
+    }
+
+    .navbar-toggler {
+      top: 0;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-brand {
+      width: auto;
+    }
+
+    .navbar-toggler {
+      top: 0;
+    }
+  }
+
 }

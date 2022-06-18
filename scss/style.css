@@ -419,16 +419,14 @@ body {
 #portfolio__project .project__content ul li .project__title {
   font-size: 30px;
   font-weight: 600;
+  text-align: start;
 }
 
-#portfolio__project .project__content ul li .size__location-btn .sqm__location .square__meter span {
-  font-size: 20px;
-  font-weight: 600;
-}
-
+#portfolio__project .project__content ul li .size__location-btn .sqm__location .square__meter span,
 #portfolio__project .project__content ul li .size__location-btn .sqm__location .place__location span {
   font-size: 20px;
   font-weight: 600;
+  text-align: left;
 }
 
 #portfolio__project .project__content ul li .size__location-btn .project__details a {
@@ -500,6 +498,13 @@ body {
     font-size: 14px;
     margin-right: 10px;
   }
+  #portfolio__project .project__content ul li .project__title {
+    font-size: 25px;
+  }
+  #portfolio__project .project__content ul li .size__location-btn .sqm__location .square__meter span,
+  #portfolio__project .project__content ul li .size__location-btn .sqm__location .place__location span {
+    font-size: 18px;
+  }
   #portfolio__project .portfolio__project-text p {
     font-size: 16px;
   }
@@ -513,6 +518,21 @@ body {
   #portfolio__project .filter__header .project__view span {
     color: #000000;
     font-size: 20px;
+  }
+  #portfolio__project .project__content ul li .project__title {
+    font-size: 20px;
+  }
+  #portfolio__project .project__content ul li .size__location-btn .sqm__location .square__meter span,
+  #portfolio__project .project__content ul li .size__location-btn .sqm__location .place__location span {
+    font-size: 16px;
+  }
+  #portfolio__project .project__content ul li .size__location-btn .project__details a {
+    width: 40px;
+    height: 40px;
+  }
+  #portfolio__project .project__content ul li .size__location-btn .project__details a i {
+    font-size: 20px;
+    line-height: 37px;
   }
   #portfolio__project .portfolio__project-text p {
     font-size: 18px;
@@ -679,6 +699,24 @@ body {
 
 .inner_navbar .navbar-brand img {
   width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  .inner_navbar .navbar-brand {
+    width: auto;
+  }
+  .inner_navbar .navbar-toggler {
+    top: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .inner_navbar .navbar-brand {
+    width: auto;
+  }
+  .inner_navbar .navbar-toggler {
+    top: 0;
+  }
 }
 
 #footer {
@@ -1169,6 +1207,42 @@ body {
   #portfolio__project .filter__header .project__view .grid__icon img,
   #portfolio__project .filter__header .project__view .list__icon img {
     width: 25px;
+  }
+  #portfolio__project .project__content ul li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #portfolio__project .project__content ul li .project__title {
+    top: 25px;
+    left: 25px;
+  }
+  #portfolio__project .project__content ul li .size__location-btn {
+    bottom: 20px;
+  }
+  #portfolio__project .project__content ul li .size__location-btn .sqm__location {
+    padding-left: 25px;
+  }
+  #portfolio__project .project__content ul li .size__location-btn .project__details {
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #portfolio__project .project__content ul li {
+    width: calc(50% - 8px);
+  }
+  #portfolio__project .project__content ul li .project__title {
+    top: 20px;
+    left: 25px;
+  }
+  #portfolio__project .project__content ul li .size__location-btn {
+    bottom: 20px;
+  }
+  #portfolio__project .project__content ul li .size__location-btn .sqm__location {
+    padding-left: 25px;
+  }
+  #portfolio__project .project__content ul li .size__location-btn .project__details {
+    margin-right: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

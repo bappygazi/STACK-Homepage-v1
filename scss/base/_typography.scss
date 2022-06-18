@@ -456,25 +456,18 @@
         .project__title {
           font-size: 30px;
           font-weight: 600;
+          text-align: start;
         }
 
         .size__location-btn {
           .sqm__location {
-            .square__meter {
-              .sqm__icon {}
 
-              span {
-                font-size: 20px;
-                font-weight: 600;
-              }
-            }
-
+            .square__meter,
             .place__location {
-              .location__icon {}
-
               span {
                 font-size: 20px;
                 font-weight: 600;
+                text-align: left;
               }
             }
           }
@@ -546,10 +539,12 @@
           .btn {
             font-size: 14px;
           }
+
           i {
             font-size: 15px !important;
             margin-left: 5px !important;
           }
+
           ul {
             li {
               .dropdown-item {
@@ -559,13 +554,35 @@
           }
         }
       }
+
       .project__view {
         span {
           color: #000000;
           font-size: 14px;
           margin-right: 10px;
         }
-  
+
+      }
+    }
+    .project__content {
+      ul {
+        li {
+          .project__title {
+            font-size: 25px;
+          }
+
+          .size__location-btn {
+            .sqm__location {
+
+              .square__meter,
+              .place__location {
+                span {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
       }
     }
     .portfolio__project-text {
@@ -584,15 +601,50 @@
           .btn {
             font-size: 20px;
           }
-          
+
         }
       }
+
       .project__view {
         span {
           color: #000000;
           font-size: 20px;
         }
-  
+
+      }
+    }
+
+    .project__content {
+      ul {
+        li {
+          .project__title {
+            font-size: 20px;
+          }
+
+          .size__location-btn {
+            .sqm__location {
+
+              .square__meter,
+              .place__location {
+                span {
+                  font-size: 16px;
+                }
+              }
+            }
+
+            .project__details {
+              a {
+                width: 40px;
+                height: 40px;
+
+                i {
+                  font-size: 20px;
+                  line-height: 37px;
+                }
+              }
+            }
+          }
+        }
       }
     }
 
