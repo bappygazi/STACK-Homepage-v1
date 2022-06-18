@@ -23,6 +23,7 @@
     font-size: 30px;
     font-weight: 400;
   }
+
   @media (max-width: 768px) {
     .hero__text h5 {
       font-size: 20px;
@@ -79,6 +80,7 @@
         border: 1px solid #F7BE00;
       }
     }
+
     @media (max-width: 768px) {
       h4 {
         font-size: 18px;
@@ -92,7 +94,7 @@
         font-size: 22px;
       }
 
-      p{
+      p {
         font-size: 16px;
       }
     }
@@ -111,6 +113,7 @@
       color: #F7BE00;
       font-size: 60px;
     }
+
     @media (max-width: 768px) {
       h4 {
         font-size: 18px;
@@ -159,13 +162,14 @@
         border: 1px solid #F7BE00;
       }
     }
+
     @media (max-width: 768px) {
 
       h3 {
         font-size: 24px;
       }
 
-      p{
+      p {
         font-size: 16px;
       }
     }
@@ -220,10 +224,11 @@
         padding-top: 50px;
         font-size: 18px;
       }
-      
+
       h3 {
         font-size: 40px;
       }
+
       p {
         font-size: 16px;
       }
@@ -257,14 +262,17 @@
       font-size: 18px;
       font-weight: 400;
     }
+
     @media (max-width: 768px) {
       p {
         padding-right: 0px;
         font-size: 16px;
       }
+
       .name {
         font-size: 16px;
       }
+
       .business__name {
         font-size: 16px;
       }
@@ -351,20 +359,178 @@
       h6 {
         font-size: 16px;
       }
+
       h3 {
         font-size: 30px;
       }
     }
+
     .footer__text {
       h4 {
         font-size: 18px;
       }
+
       p {
         padding-top: 15px;
       }
 
       .social__icon {
         padding-top: 0 !important;
+      }
+    }
+  }
+}
+
+// portfolio page start//
+
+// inner hero part //
+#inner__hero {
+  .inner__hero-text {
+    h5 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: #F7BE00;
+      font-size: 60px;
+      font-weight: 600;
+    }
+  }
+}
+
+// portfolio project part//
+#portfolio__project {
+  .filter__header {
+
+    .project__size,
+    .sort__by {
+      .dropdown {
+        .btn {
+          color: #000000;
+          font-size: 22px;
+          font-weight: 600;
+
+          i {
+            color: #000000;
+            font-size: 28px;
+          }
+
+          &:focus {
+            box-shadow: none;
+          }
+        }
+
+        ul {
+          li {
+            .dropdown-item {
+              font-size: 16px;
+              font-weight: 500;
+              color: #ffffff;
+
+              &:hover {
+                color: #F7BE00;
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .project__view {
+      span {
+        color: #000000;
+        font-size: 22px;
+        font-weight: 600;
+        margin-right: 35px;
+      }
+
+    }
+  }
+
+  .project__content {
+    ul {
+      li {
+        .project__title {
+          font-size: 30px;
+          font-weight: 600;
+        }
+
+        .size__location-btn {
+          .sqm__location {
+            .square__meter {
+              .sqm__icon {}
+
+              span {
+                font-size: 20px;
+                font-weight: 600;
+              }
+            }
+
+            .place__location {
+              .location__icon {}
+
+              span {
+                font-size: 20px;
+                font-weight: 600;
+              }
+            }
+          }
+
+          .project__details {
+            a {
+              width: 54px;
+              height: 54px;
+              border: 2px solid #ffffff;
+              transition: all linear .2s;
+
+              i {
+                font-size: 26px;
+                line-height: 50px;
+              }
+
+              &:hover {
+                border-color: #F7BE00;
+                background-color: #F7BE00;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+.portfolio__project-text {
+  p {
+    font-size: 26px;
+    font-weight: 400;
+  }
+}
+  .load__more-btn {
+    a {
+      color: #000000;
+      font-size: 16px;
+      font-weight: 600;
+
+      i {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+        line-height: 26px;
+        border-radius: 50%;
+        transition: all linear .2s;
+        border: 1px solid #888888;
+      }
+
+      &:hover i {
+        width: 40px;
+        height: 40px;
+        color: #ffffff;
+        line-height: 38px;
+        border-color: #F7BE00;
+        margin-right: 8px !important;
+        background-color: #F7BE00;
       }
     }
   }

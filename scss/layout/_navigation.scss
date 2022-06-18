@@ -21,6 +21,7 @@
 
   .navbar-brand {
     padding: 0 !important;
+
     img {
       width: 40% !important;
     }
@@ -124,7 +125,21 @@
       box-shadow: 0 3px 10px 1px #1a1a1a;
     }
   }
+  @media (min-width: 992px) and (max-width: 1199px) {
 
+    .navbar-brand {
+      img {
+        width: 60%;
+      }
+    }
+   .navbar-nav {
+    .nav-item {
+      .nav-link{
+        padding: 0 7px !important;
+      }
+    }
+   }
+  }
   .navbar__brand-none {
     display: none;
   }
@@ -144,6 +159,19 @@
     .navbar-toggler {
       padding: 0;
       top: -10px;
+    }
+  }
+}
+
+// inner_navbar //
+.inner_navbar {
+  background-color: #111111;
+
+  .navbar-brand {
+    padding-bottom: 0;
+
+    img {
+      width: 100% !important;
     }
   }
 }
