@@ -437,8 +437,8 @@ body {
   text-align: left;
 }
 
-#portfolio__project .project__content-list ul li .size__location-btn .project__details a,
-#portfolio__project .project__content-grid ul li .size__location-btn .project__details a {
+#portfolio__project .project__content-list ul li .size__location-btn .project__details-icon a,
+#portfolio__project .project__content-grid ul li .size__location-btn .project__details-icon a {
   width: 54px;
   height: 54px;
   border: 2px solid #ffffff;
@@ -446,14 +446,14 @@ body {
   transition: all linear .2s;
 }
 
-#portfolio__project .project__content-list ul li .size__location-btn .project__details a i,
-#portfolio__project .project__content-grid ul li .size__location-btn .project__details a i {
+#portfolio__project .project__content-list ul li .size__location-btn .project__details-icon a i,
+#portfolio__project .project__content-grid ul li .size__location-btn .project__details-icon a i {
   font-size: 26px;
   line-height: 50px;
 }
 
-#portfolio__project .project__content-list ul li .size__location-btn .project__details a:hover,
-#portfolio__project .project__content-grid ul li .size__location-btn .project__details a:hover {
+#portfolio__project .project__content-list ul li .size__location-btn .project__details-icon a:hover,
+#portfolio__project .project__content-grid ul li .size__location-btn .project__details-icon a:hover {
   border-color: #F7BE00;
   background-color: #F7BE00;
 }
@@ -534,19 +534,128 @@ body {
   #portfolio__project .project__content-list ul li .size__location-btn .sqm__location .place__location span {
     font-size: 16px;
   }
-  #portfolio__project .project__content-grid ul li .size__location-btn .project__details a,
-  #portfolio__project .project__content-list ul li .size__location-btn .project__details a {
+  #portfolio__project .project__content-grid ul li .size__location-btn .project__details-icon a,
+  #portfolio__project .project__content-list ul li .size__location-btn .project__details-icon a {
     width: 40px;
     height: 40px;
   }
-  #portfolio__project .project__content-grid ul li .size__location-btn .project__details a i,
-  #portfolio__project .project__content-list ul li .size__location-btn .project__details a i {
+  #portfolio__project .project__content-grid ul li .size__location-btn .project__details-icon a i,
+  #portfolio__project .project__content-list ul li .size__location-btn .project__details-icon a i {
     font-size: 20px;
     line-height: 37px;
   }
   #portfolio__project .portfolio__project-text p {
     font-size: 18px;
   }
+}
+
+.project__details-text {
+  padding-top: 30px;
+  border-top: 2px solid #F7BE00;
+}
+
+.project__details-text p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.project__details-text .table td {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.project__details-text .table td:first-child {
+  font-weight: 600;
+}
+
+.project__details .download__share a {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.similar__projects-header h3 {
+  color: #F7BE00;
+  font-size: 40px;
+}
+
+.similar__projects-item .project__title {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: start;
+}
+
+@media (max-width: 768px) {
+  .similar__projects-item .project__title {
+    font-size: 25px;
+  }
+}
+
+.similar__projects-item .size__location-btn .sqm__location .square__meter span,
+.similar__projects-item .size__location-btn .sqm__location .place__location span {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .similar__projects-item .size__location-btn .sqm__location .square__meter span,
+  .similar__projects-item .size__location-btn .sqm__location .place__location span {
+    font-size: 16px;
+  }
+}
+
+.similar__projects-item .size__location-btn .project__details-icon a {
+  width: 54px;
+  height: 54px;
+  border: 2px solid #ffffff;
+  -webkit-transition: all linear .2s;
+  transition: all linear .2s;
+}
+
+@media (max-width: 768px) {
+  .similar__projects-item .size__location-btn .project__details-icon a {
+    width: 50px;
+    height: 50px;
+  }
+  .similar__projects-item .size__location-btn .project__details-icon a i {
+    line-height: 47px !important;
+  }
+}
+
+.similar__projects-item .size__location-btn .project__details-icon a i {
+  font-size: 26px;
+  line-height: 50px;
+}
+
+.similar__projects-item .size__location-btn .project__details-icon a:hover {
+  border-color: #F7BE00;
+  background-color: #F7BE00;
+}
+
+.similar__projects .see__all a {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.similar__projects .see__all a i {
+  width: 28px;
+  height: 28px;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 50%;
+  -webkit-transition: all linear .2s;
+  transition: all linear .2s;
+  border: 1px solid #888888;
+}
+
+.similar__projects .see__all a:hover i {
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  line-height: 38px;
+  border-color: #F7BE00;
+  margin-right: 8px !important;
+  background-color: #F7BE00;
 }
 
 .navbg {
@@ -1220,8 +1329,8 @@ body {
   padding-left: 40px;
 }
 
-#portfolio__project .project__content-grid ul li .size__location-btn .project__details,
-#portfolio__project .project__content-list ul li .size__location-btn .project__details {
+#portfolio__project .project__content-grid ul li .size__location-btn .project__details-icon,
+#portfolio__project .project__content-list ul li .size__location-btn .project__details-icon {
   margin-right: 40px;
 }
 
@@ -1273,8 +1382,8 @@ body {
   #portfolio__project#portfolio__project .project__content-list ul li .size__location-btn .sqm__location {
     padding-left: 25px;
   }
-  #portfolio__project#portfolio__project .project__content-grid ul li .size__location-btn .project__details,
-  #portfolio__project#portfolio__project .project__content-list ul li .size__location-btn .project__details {
+  #portfolio__project#portfolio__project .project__content-grid ul li .size__location-btn .project__details-icon,
+  #portfolio__project#portfolio__project .project__content-list ul li .size__location-btn .project__details-icon {
     display: none;
   }
 }
@@ -1300,9 +1409,113 @@ body {
   #portfolio__project .project__content-list ul li .size__location-btn .sqm__location {
     padding-left: 25px;
   }
-  #portfolio__project .project__content-grid ul li .size__location-btn .project__details,
-  #portfolio__project .project__content-list ul li .size__location-btn .project__details {
+  #portfolio__project .project__content-grid ul li .size__location-btn .project__details-icon,
+  #portfolio__project .project__content-list ul li .size__location-btn .project__details-icon {
     margin-right: 25px;
   }
+}
+
+.project__details {
+  background-color: #111111;
+}
+
+.project__details-text .table {
+  margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+  .project__details-text .table {
+    margin-top: 50px;
+  }
+}
+
+.project__details-text .table td {
+  border-top: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+}
+
+@media (max-width: 768px) {
+  .project__details-img {
+    height: 400px !important;
+    background-position-y: 55%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .project__details-img {
+    height: 600px !important;
+  }
+}
+
+.similar__projects {
+  background-color: #111111;
+}
+
+.similar__projects-header h3 {
+  color: #F7BE00;
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .similar__projects-header h3 {
+    font-size: 24px;
+  }
+}
+
+.similar__projects-item .project__title {
+  top: 30px;
+  left: 40px;
+  right: 40px;
+}
+
+@media (max-width: 768px) {
+  .similar__projects-item .project__title {
+    top: 20px;
+    left: 25px;
+    right: 25px;
+  }
+}
+
+.similar__projects-item .size__location-btn {
+  width: 100%;
+  bottom: 35px;
+}
+
+@media (max-width: 768px) {
+  .similar__projects-item .size__location-btn {
+    bottom: 20px;
+  }
+}
+
+.similar__projects-item .size__location-btn .sqm__location {
+  padding-left: 40px;
+}
+
+@media (max-width: 768px) {
+  .similar__projects-item .size__location-btn .sqm__location {
+    padding-left: 25px;
+  }
+}
+
+.similar__projects-item .size__location-btn .project__details-icon {
+  margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+  .similar__projects-item .size__location-btn .project__details-icon {
+    margin-right: 25px;
+  }
+}
+
+.similar__projects .see__all a {
+  margin-right: 45px;
+}
+
+.similar__projects .see__all a i {
+  top: 50%;
+  right: auto;
+  margin-left: 25px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=style.css.map */

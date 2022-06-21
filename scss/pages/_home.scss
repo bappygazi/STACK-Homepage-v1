@@ -473,7 +473,7 @@
 
           }
 
-          .project__details {
+          .project__details-icon {
             margin-right: 40px;
           }
         }
@@ -542,7 +542,7 @@
 
               }
 
-              .project__details {
+              .project__details-icon {
                 display: none;
               }
             }
@@ -579,7 +579,7 @@
 
             }
 
-            .project__details {
+            .project__details-icon {
               margin-right: 25px;
             }
           }
@@ -587,5 +587,103 @@
       }
     }
   }
+}
 
+// project details //
+.project__details {
+  background-color: #111111;
+
+  &-text {
+    .table {
+      margin-top: 150px;
+      @media (max-width: 768px) {
+        margin-top: 50px;
+      }
+
+      td {
+        border-top: 1px solid #888888;
+        border-bottom: 1px solid #888888;
+      }
+    }
+  }
+
+  &-img {
+    @media (max-width: 768px) {
+      height: 400px !important;
+      background-position-y: 55%;
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      height: 600px !important;
+    }
+  }
+}
+
+// Similar Projects // 
+.similar {
+  &__projects {
+    background-color: #111111;
+
+    &-header {
+      h3 {
+        color: #F7BE00;
+        font-size: 40px;
+      }
+      @media (max-width: 768px) {
+        h3 {
+          font-size: 24px;
+        }
+      }
+    }
+
+    &-item {
+      .project__title {
+        top: 30px;
+        left: 40px;
+        right: 40px;
+        @media (max-width: 768px) {
+          top: 20px;
+          left: 25px;
+          right: 25px;
+        }
+      }
+
+      .size__location-btn {
+        width: 100%;
+        bottom: 35px;
+        @media (max-width: 768px) {
+          bottom: 20px;
+        }
+
+        .sqm__location {
+          padding-left: 40px;
+          @media (max-width: 768px) {
+            padding-left: 25px;
+          }
+
+        }
+
+        .project__details-icon {
+          margin-right: 40px;
+          @media (max-width: 768px) {
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+
+    .see__all {
+      a {
+        margin-right: 45px;
+
+        i {
+          top: 50%;
+          right: auto;
+          margin-left: 25px;
+          transform: translate(-50%, -50%);
+        }
+
+      }
+    }
+  }
 }
