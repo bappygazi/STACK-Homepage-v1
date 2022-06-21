@@ -48,10 +48,6 @@ body {
   padding-bottom: 150px;
 }
 
-.pt-100px {
-  padding-top: 100px;
-}
-
 .navbar .navbar-nav .nav-item .nav-link {
   color: #ffffff;
   font-size: 18px;
@@ -377,6 +373,15 @@ body {
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  #inner__hero .inner__hero-text h5 {
+    font-size: 18px;
+  }
+  #inner__hero .inner__hero-text h3 {
+    font-size: 40px;
+  }
+}
+
 #portfolio__project .filter__header .project__size .dropdown .btn,
 #portfolio__project .filter__header .sort__by .dropdown .btn {
   color: #000000;
@@ -416,20 +421,24 @@ body {
   margin-right: 35px;
 }
 
-#portfolio__project .project__content ul li .project__title {
+#portfolio__project .project__content-list ul li .project__title,
+#portfolio__project .project__content-grid ul li .project__title {
   font-size: 30px;
   font-weight: 600;
   text-align: start;
 }
 
-#portfolio__project .project__content ul li .size__location-btn .sqm__location .square__meter span,
-#portfolio__project .project__content ul li .size__location-btn .sqm__location .place__location span {
+#portfolio__project .project__content-list ul li .size__location-btn .sqm__location .square__meter span,
+#portfolio__project .project__content-list ul li .size__location-btn .sqm__location .place__location span,
+#portfolio__project .project__content-grid ul li .size__location-btn .sqm__location .square__meter span,
+#portfolio__project .project__content-grid ul li .size__location-btn .sqm__location .place__location span {
   font-size: 20px;
   font-weight: 600;
   text-align: left;
 }
 
-#portfolio__project .project__content ul li .size__location-btn .project__details a {
+#portfolio__project .project__content-list ul li .size__location-btn .project__details a,
+#portfolio__project .project__content-grid ul li .size__location-btn .project__details a {
   width: 54px;
   height: 54px;
   border: 2px solid #ffffff;
@@ -437,12 +446,14 @@ body {
   transition: all linear .2s;
 }
 
-#portfolio__project .project__content ul li .size__location-btn .project__details a i {
+#portfolio__project .project__content-list ul li .size__location-btn .project__details a i,
+#portfolio__project .project__content-grid ul li .size__location-btn .project__details a i {
   font-size: 26px;
   line-height: 50px;
 }
 
-#portfolio__project .project__content ul li .size__location-btn .project__details a:hover {
+#portfolio__project .project__content-list ul li .size__location-btn .project__details a:hover,
+#portfolio__project .project__content-grid ul li .size__location-btn .project__details a:hover {
   border-color: #F7BE00;
   background-color: #F7BE00;
 }
@@ -482,27 +493,21 @@ body {
 @media (max-width: 768px) {
   #portfolio__project .filter__header .project__size .dropdown .btn,
   #portfolio__project .filter__header .sort__by .dropdown .btn {
-    font-size: 14px;
-  }
-  #portfolio__project .filter__header .project__size .dropdown i,
-  #portfolio__project .filter__header .sort__by .dropdown i {
-    font-size: 15px !important;
-    margin-left: 5px !important;
-  }
-  #portfolio__project .filter__header .project__size .dropdown ul li .dropdown-item,
-  #portfolio__project .filter__header .sort__by .dropdown ul li .dropdown-item {
-    font-size: 14px;
+    font-size: 22px;
   }
   #portfolio__project .filter__header .project__view span {
     color: #000000;
-    font-size: 14px;
+    font-size: 22px;
     margin-right: 10px;
   }
-  #portfolio__project .project__content ul li .project__title {
+  #portfolio__project .project__content-grid ul li .project__title,
+  #portfolio__project .project__content-list ul li .project__title {
     font-size: 25px;
   }
-  #portfolio__project .project__content ul li .size__location-btn .sqm__location .square__meter span,
-  #portfolio__project .project__content ul li .size__location-btn .sqm__location .place__location span {
+  #portfolio__project .project__content-grid ul li .size__location-btn .sqm__location .square__meter span,
+  #portfolio__project .project__content-grid ul li .size__location-btn .sqm__location .place__location span,
+  #portfolio__project .project__content-list ul li .size__location-btn .sqm__location .square__meter span,
+  #portfolio__project .project__content-list ul li .size__location-btn .sqm__location .place__location span {
     font-size: 18px;
   }
   #portfolio__project .portfolio__project-text p {
@@ -519,18 +524,23 @@ body {
     color: #000000;
     font-size: 20px;
   }
-  #portfolio__project .project__content ul li .project__title {
+  #portfolio__project .project__content-grid ul li .project__title,
+  #portfolio__project .project__content-list ul li .project__title {
     font-size: 20px;
   }
-  #portfolio__project .project__content ul li .size__location-btn .sqm__location .square__meter span,
-  #portfolio__project .project__content ul li .size__location-btn .sqm__location .place__location span {
+  #portfolio__project .project__content-grid ul li .size__location-btn .sqm__location .square__meter span,
+  #portfolio__project .project__content-grid ul li .size__location-btn .sqm__location .place__location span,
+  #portfolio__project .project__content-list ul li .size__location-btn .sqm__location .square__meter span,
+  #portfolio__project .project__content-list ul li .size__location-btn .sqm__location .place__location span {
     font-size: 16px;
   }
-  #portfolio__project .project__content ul li .size__location-btn .project__details a {
+  #portfolio__project .project__content-grid ul li .size__location-btn .project__details a,
+  #portfolio__project .project__content-list ul li .size__location-btn .project__details a {
     width: 40px;
     height: 40px;
   }
-  #portfolio__project .project__content ul li .size__location-btn .project__details a i {
+  #portfolio__project .project__content-grid ul li .size__location-btn .project__details a i,
+  #portfolio__project .project__content-list ul li .size__location-btn .project__details a i {
     font-size: 20px;
     line-height: 37px;
   }
@@ -1130,6 +1140,15 @@ body {
   padding-top: 150px;
 }
 
+@media (max-width: 768px) {
+  #inner__hero#inner__hero {
+    height: 385px;
+  }
+  #inner__hero#inner__hero .inner__hero-text {
+    padding-top: 80px;
+  }
+}
+
 #portfolio__project {
   padding-top: 80px;
   padding-bottom: 100px;
@@ -1152,7 +1171,23 @@ body {
   background-color: #111111;
 }
 
-#portfolio__project .project__content ul {
+#portfolio__project .filter__header .project__view .grid__icon,
+#portfolio__project .filter__header .project__view .list__icon {
+  cursor: pointer;
+}
+
+#portfolio__project .project__content-list {
+  display: none;
+}
+
+#portfolio__project .project__content-grid,
+#portfolio__project .project__content-list {
+  -webkit-transition: all linear .2s;
+  transition: all linear .2s;
+}
+
+#portfolio__project .project__content-grid ul,
+#portfolio__project .project__content-list ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1162,26 +1197,31 @@ body {
           flex-flow: row wrap;
 }
 
-#portfolio__project .project__content ul li {
+#portfolio__project .project__content-grid ul li,
+#portfolio__project .project__content-list ul li {
   width: calc(50% - 16px);
   text-align: center;
 }
 
-#portfolio__project .project__content ul li .project__title {
+#portfolio__project .project__content-grid ul li .project__title,
+#portfolio__project .project__content-list ul li .project__title {
   top: 30px;
   left: 40px;
 }
 
-#portfolio__project .project__content ul li .size__location-btn {
+#portfolio__project .project__content-grid ul li .size__location-btn,
+#portfolio__project .project__content-list ul li .size__location-btn {
   width: 100%;
   bottom: 35px;
 }
 
-#portfolio__project .project__content ul li .size__location-btn .sqm__location {
+#portfolio__project .project__content-grid ul li .size__location-btn .sqm__location,
+#portfolio__project .project__content-list ul li .size__location-btn .sqm__location {
   padding-left: 40px;
 }
 
-#portfolio__project .project__content ul li .size__location-btn .project__details {
+#portfolio__project .project__content-grid ul li .size__location-btn .project__details,
+#portfolio__project .project__content-list ul li .size__location-btn .project__details {
   margin-right: 40px;
 }
 
@@ -1198,50 +1238,70 @@ body {
 }
 
 @media (max-width: 768px) {
-  #portfolio__project .filter__header .project__size {
+  #portfolio__project#portfolio__project {
+    padding-top: 20px;
+  }
+  #portfolio__project#portfolio__project .filter__header {
+    margin-bottom: 80px;
+  }
+  #portfolio__project#portfolio__project .filter__header .project__size {
     padding-right: 8px;
   }
-  #portfolio__project .filter__header .project__view .grid__icon {
+  #portfolio__project#portfolio__project .filter__header .project__view .grid__icon {
     margin-right: 8px !important;
   }
-  #portfolio__project .filter__header .project__view .grid__icon img,
-  #portfolio__project .filter__header .project__view .list__icon img {
+  #portfolio__project#portfolio__project .filter__header .project__view .grid__icon img,
+  #portfolio__project#portfolio__project .filter__header .project__view .list__icon img {
     width: 25px;
   }
-  #portfolio__project .project__content ul li {
+  #portfolio__project#portfolio__project .project__content-grid ul li,
+  #portfolio__project#portfolio__project .project__content-list ul li {
     width: 100%;
     margin-bottom: 30px;
   }
-  #portfolio__project .project__content ul li .project__title {
+  #portfolio__project#portfolio__project .project__content-grid ul li .project__title,
+  #portfolio__project#portfolio__project .project__content-list ul li .project__title {
     top: 25px;
     left: 25px;
+    right: 25px;
   }
-  #portfolio__project .project__content ul li .size__location-btn {
+  #portfolio__project#portfolio__project .project__content-grid ul li .size__location-btn,
+  #portfolio__project#portfolio__project .project__content-list ul li .size__location-btn {
     bottom: 20px;
   }
-  #portfolio__project .project__content ul li .size__location-btn .sqm__location {
+  #portfolio__project#portfolio__project .project__content-grid ul li .size__location-btn .sqm__location,
+  #portfolio__project#portfolio__project .project__content-list ul li .size__location-btn .sqm__location {
     padding-left: 25px;
   }
-  #portfolio__project .project__content ul li .size__location-btn .project__details {
-    margin-right: 25px;
+  #portfolio__project#portfolio__project .project__content-grid ul li .size__location-btn .project__details,
+  #portfolio__project#portfolio__project .project__content-list ul li .size__location-btn .project__details {
+    display: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  #portfolio__project .project__content ul li {
+  #portfolio__project .filter__header .project__size {
+    padding-right: 80px;
+  }
+  #portfolio__project .project__content-grid ul li,
+  #portfolio__project .project__content-list ul li {
     width: calc(50% - 8px);
   }
-  #portfolio__project .project__content ul li .project__title {
+  #portfolio__project .project__content-grid ul li .project__title,
+  #portfolio__project .project__content-list ul li .project__title {
     top: 20px;
     left: 25px;
   }
-  #portfolio__project .project__content ul li .size__location-btn {
+  #portfolio__project .project__content-grid ul li .size__location-btn,
+  #portfolio__project .project__content-list ul li .size__location-btn {
     bottom: 20px;
   }
-  #portfolio__project .project__content ul li .size__location-btn .sqm__location {
+  #portfolio__project .project__content-grid ul li .size__location-btn .sqm__location,
+  #portfolio__project .project__content-list ul li .size__location-btn .sqm__location {
     padding-left: 25px;
   }
-  #portfolio__project .project__content ul li .size__location-btn .project__details {
+  #portfolio__project .project__content-grid ul li .size__location-btn .project__details,
+  #portfolio__project .project__content-list ul li .size__location-btn .project__details {
     margin-right: 25px;
   }
 }

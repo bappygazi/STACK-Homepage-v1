@@ -32,7 +32,8 @@
     <!-- navbar part html start  -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top inner_navbar">
         <div class="container position-relative">
-            <a class="navbar-brand" href="./index.html"><img src="./images/logo70px.png" alt="logo" id="brand__logo"></a>
+            <a class="navbar-brand" href="./index.html"><img src="./images/logo70px.png" alt="logo"
+                    id="brand__logo"></a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <i class="fal fa-bars"></i>
@@ -113,7 +114,7 @@
     <section id="inner__hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-7 col-xl-6 col-xxl-5">
                     <div class="inner__hero-text">
                         <h5 class="text-white text-uppercase">Portfolio</h5>
                         <h3 class="">Beautifully unique workplaces</h3>
@@ -130,7 +131,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="filter__header d-flex align-items-center">
-                        <div class="project__size">
+                        <div class="project__size flex-grow-1 flex-md-grow-0">
                             <div class="dropdown">
                                 <button class="btn d-flex align-items-center text-uppercase p-0" type="button"
                                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Project
@@ -142,7 +143,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="sort__by flex-grow-1">
+                        <div class="sort__by flex-md-grow-1 flex-grow-0">
                             <div class="dropdown">
                                 <button class="btn d-flex align-items-center text-uppercase p-0" type="button"
                                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Sort by <i
@@ -153,19 +154,21 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="project__view d-flex align-items-center">
-                            <span class="d text-uppercase">Project view</span>
-                            <div class="grid__icon me-3"><a href="#"><img width="40" src="./images/grid__icon.png"
-                                alt="grid__icon.png" class="img-fluid"></a></div>
-                            <div class="list__icon"><a href="#"><img width="40" src="./images/list__icon.png" alt="grid__icon.png"
-                                class="img-fluid"></a></div>
+                        <div class="d-md-block d-none">
+                            <div class="project__view d-flex align-items-center">
+                                <span class="d text-uppercase">Project view</span>
+                                <div class="grid__icon me-3"><img width="40" src="./images/grid__icon.png"
+                                        alt="grid__icon.png" class="img-fluid"></div>
+                                <div class="list__icon"><img width="40" src="./images/list__icon.png"
+                                        alt="grid__icon.png" class="img-fluid"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="project__content mb-5">
+                    <div class="project__content-grid mb-5">
                         <ul class="grid__view">
                             <li class="position-relative me-md-2 py-md-2 me-lg-3 py-lg-3">
                                 <img src="./images/project__item1.jpg" alt="project__item" class=" img-fluid">
@@ -316,6 +319,83 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="project__content-list mb-5">
+                        <ul class="list__view flex-column">
+                            <li class="position-relative w-100 my-3">
+                                <img src="./images/list_project__item1.jpg" alt="project__item" class=" img-fluid">
+                                <div class="project__title position-absolute text-white">Lion NZ Limited</div>
+                                <div
+                                    class="size__location-btn d-flex align-items-center justify-content-between position-absolute">
+                                    <div class="sqm__location">
+                                        <div class="square__meter d-flex mb-3">
+                                            <div class="sqm__icon"><img width="18" src="./images/sqm__icon.png"
+                                                    alt="sqm__icon" class="img-fluid"></div>
+                                            <span class="text-white ms-3">X,XXX sqm</span>
+                                        </div>
+                                        <div class="place__location d-flex">
+                                            <div class="location__icon"><img width="18"
+                                                    src="./images/location__icon.png" alt="location__icon"
+                                                    class="img-fluid"></div>
+                                            <span class="text-white ms-3">136 Fanshawe Street, Auckland</span>
+                                        </div>
+                                    </div>
+                                    <div class="project__details">
+                                        <a class="d-inline-block rounded-circle text-white" href="#"><i
+                                                class="fal fa-long-arrow-right text-center"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="position-relative w-100 my-3">
+                                <img src="./images/list_project__item2.jpg" alt="project__item" class=" img-fluid">
+                                <div class="project__title position-absolute text-white">Tower Insurance</div>
+                                <div
+                                    class="size__location-btn d-flex align-items-center justify-content-between position-absolute">
+                                    <div class="sqm__location">
+                                        <div class="square__meter d-flex mb-3">
+                                            <div class="sqm__icon"><img width="18" src="./images/sqm__icon.png"
+                                                    alt="sqm__icon" class="img-fluid"></div>
+                                            <span class="text-white ms-3">X,XXX sqm</span>
+                                        </div>
+                                        <div class="place__location d-flex">
+                                            <div class="location__icon"><img width="18"
+                                                    src="./images/location__icon.png" alt="location__icon"
+                                                    class="img-fluid"></div>
+                                            <span class="text-white ms-3">136 Fanshawe Street, Auckland</span>
+                                        </div>
+                                    </div>
+                                    <div class="project__details">
+                                        <a class="d-inline-block rounded-circle text-white" href="#"><i
+                                                class="fal fa-long-arrow-right text-center"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="position-relative w-100 my-3">
+                                <img src="./images/list_project__item3.jpg" alt="project__item" class=" img-fluid">
+                                <div class="project__title position-absolute text-white">Generator Financial Institution
+                                </div>
+                                <div
+                                    class="size__location-btn d-flex align-items-center justify-content-between position-absolute">
+                                    <div class="sqm__location">
+                                        <div class="square__meter d-flex mb-3">
+                                            <div class="sqm__icon"><img width="18" src="./images/sqm__icon.png"
+                                                    alt="sqm__icon" class="img-fluid"></div>
+                                            <span class="text-white ms-3">X,XXX sqm</span>
+                                        </div>
+                                        <div class="place__location d-flex">
+                                            <div class="location__icon"><img width="18"
+                                                    src="./images/location__icon.png" alt="location__icon"
+                                                    class="img-fluid"></div>
+                                            <span class="text-white ms-3">136 Fanshawe Street, Auckland</span>
+                                        </div>
+                                    </div>
+                                    <div class="project__details">
+                                        <a class="d-inline-block rounded-circle text-white" href="#"><i
+                                                class="fal fa-long-arrow-right text-center"></i></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -329,7 +409,7 @@
                 <div class="col-lg-5 col-md-6">
                     <div class="load__more-btn text-start text-md-end">
                         <a class="text-uppercase position-relative" href="#">Load more <i
-                            class="fal fa-long-arrow-right text-center position-absolute"></i></a>
+                                class="fal fa-long-arrow-right text-center position-absolute"></i></a>
                     </div>
                 </div>
             </div>
@@ -339,9 +419,9 @@
     <!-- portfolio project part end -->
 
     <!--   services part hmtl start-->
-    <section id="services" class="pt-100px">
+    <section id="services" class="pt-md-5">
         <div class="container">
-            <div class="row">
+            <div class="row pt-md-5">
                 <div class="col-lg-7">
                     <div class="services__head-text">
                         <h4 class="text-white text-uppercase mb-3">services</h4>

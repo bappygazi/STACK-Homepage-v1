@@ -394,6 +394,16 @@
   .inner__hero-text {
     padding-top: 150px;
   }
+
+  @media (max-width: 768px) {
+    &#inner__hero {
+      height: 385px;
+
+      .inner__hero-text {
+        padding-top: 80px;
+      }
+    }
+  }
 }
 
 // portfolio project part//
@@ -422,9 +432,24 @@
         }
       }
     }
+
+    .project__view {
+
+      .grid__icon,
+      .list__icon {
+        cursor: pointer;
+      }
+    }
   }
 
-  .project__content {
+  .project__content-list {
+    display: none;
+  }
+
+  .project__content-grid,
+  .project__content-list {
+    transition: all linear .2s;
+
     ul {
       display: flex;
       flex-flow: row wrap;
@@ -471,47 +496,55 @@
   }
 
   @media (max-width: 768px) {
-    .filter__header {
-      .project__size {
-        padding-right: 8px;
-      }
+    &#portfolio__project {
+      padding-top: 20px;
 
-      .project__view {
-        .grid__icon {
-          margin-right: 8px !important;
+      .filter__header {
+        margin-bottom: 80px;
+
+        .project__size {
+          padding-right: 8px;
         }
 
-        .grid__icon,
-        .list__icon {
-          img {
-            width: 25px;
+        .project__view {
+          .grid__icon {
+            margin-right: 8px !important;
+          }
+
+          .grid__icon,
+          .list__icon {
+            img {
+              width: 25px;
+            }
           }
         }
       }
-    }
 
-    .project__content {
-      ul {
+      .project__content-grid,
+      .project__content-list {
+        ul {
 
-        li {
-          width: 100%;
-          margin-bottom: 30px;
+          li {
+            width: 100%;
+            margin-bottom: 30px;
 
-          .project__title {
-            top: 25px;
-            left: 25px;
-          }
-
-          .size__location-btn {
-            bottom: 20px;
-
-            .sqm__location {
-              padding-left: 25px;
-
+            .project__title {
+              top: 25px;
+              left: 25px;
+              right: 25px;
             }
 
-            .project__details {
-              margin-right: 25px;
+            .size__location-btn {
+              bottom: 20px;
+
+              .sqm__location {
+                padding-left: 25px;
+
+              }
+
+              .project__details {
+                display: none;
+              }
             }
           }
         }
@@ -520,7 +553,14 @@
   }
 
   @media (min-width: 768px) and (max-width: 991.98px) {
-    .project__content {
+    .filter__header {
+      .project__size {
+        padding-right: 80px;
+      }
+    }
+
+    .project__content-grid,
+    .project__content-list {
       ul {
 
         li {

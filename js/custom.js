@@ -114,4 +114,31 @@ $(function () {
             }
         }
     });
+    // portfolio part js//
+    $(".list__icon").on("click", function () {
+        $(".project__content-list").addClass("d-block");
+
+        $(".project__content-grid").addClass("d-none");
+
+        $(".project__content-list").removeClass("d-none");
+    });
+
+    $(".grid__icon").on("click", function () {
+        $(".project__content-list").addClass("d-none");
+
+        $(".project__content-grid").addClass("d-block");
+        $(".project__content-grid").removeClass("d-none");
+
+    });
+    
+
+    // $(".grid__icon").on("click", function () {
+    //     $(".project__content-list").addClass("d-none");
+    // });
+
+    // $(".grid__icon").on("click", function () {
+    //     $(".project__content-grid").addClass("d-block");
+    // });
+   
+
 });

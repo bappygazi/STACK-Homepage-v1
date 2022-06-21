@@ -398,6 +398,18 @@
       font-weight: 600;
     }
   }
+  @media (max-width: 768px) {
+    .inner__hero-text {
+      h5 {
+        font-size: 18px;
+      }
+  
+      h3 {
+        font-size: 40px;
+
+      }
+    }
+  }
 }
 
 // portfolio project part//
@@ -450,7 +462,8 @@
     }
   }
 
-  .project__content {
+  .project__content-list,
+  .project__content-grid {
     ul {
       li {
         .project__title {
@@ -537,34 +550,24 @@
       .sort__by {
         .dropdown {
           .btn {
-            font-size: 14px;
+            font-size: 22px;
           }
 
-          i {
-            font-size: 15px !important;
-            margin-left: 5px !important;
-          }
-
-          ul {
-            li {
-              .dropdown-item {
-                font-size: 14px;
-              }
-            }
-          }
         }
       }
 
       .project__view {
         span {
           color: #000000;
-          font-size: 14px;
+          font-size: 22px;
           margin-right: 10px;
         }
 
       }
     }
-    .project__content {
+
+    .project__content-grid,
+    .project__content-list {
       ul {
         li {
           .project__title {
@@ -585,6 +588,7 @@
         }
       }
     }
+
     .portfolio__project-text {
       p {
         font-size: 16px;
@@ -614,7 +618,8 @@
       }
     }
 
-    .project__content {
+    .project__content-grid,
+    .project__content-list {
       ul {
         li {
           .project__title {
