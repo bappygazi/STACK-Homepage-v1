@@ -596,6 +596,7 @@
   &-text {
     .table {
       margin-top: 150px;
+
       @media (max-width: 768px) {
         margin-top: 50px;
       }
@@ -610,7 +611,7 @@
   &-img {
     @media (max-width: 768px) {
       height: 400px !important;
-      background-position-y: 55%;
+      background-position: 15% 55%;
     }
 
     @media (min-width: 768px) and (max-width: 991.98px) {
@@ -629,6 +630,7 @@
         color: #F7BE00;
         font-size: 40px;
       }
+
       @media (max-width: 768px) {
         h3 {
           font-size: 24px;
@@ -641,6 +643,7 @@
         top: 30px;
         left: 40px;
         right: 40px;
+
         @media (max-width: 768px) {
           top: 20px;
           left: 25px;
@@ -651,12 +654,14 @@
       .size__location-btn {
         width: 100%;
         bottom: 35px;
+
         @media (max-width: 768px) {
           bottom: 20px;
         }
 
         .sqm__location {
           padding-left: 40px;
+
           @media (max-width: 768px) {
             padding-left: 25px;
           }
@@ -665,6 +670,7 @@
 
         .project__details-icon {
           margin-right: 40px;
+
           @media (max-width: 768px) {
             margin-right: 25px;
           }

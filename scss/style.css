@@ -1437,7 +1437,7 @@ body {
 @media (max-width: 768px) {
   .project__details-img {
     height: 400px !important;
-    background-position-y: 55%;
+    background-position: 15% 55%;
   }
 }
 
