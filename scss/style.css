@@ -423,7 +423,7 @@ body {
 
 #portfolio__project .project__content-list ul li .project__title,
 #portfolio__project .project__content-grid ul li .project__title {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
   text-align: start;
 }
@@ -459,7 +459,7 @@ body {
 }
 
 #portfolio__project .portfolio__project-text p {
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -499,10 +499,6 @@ body {
     color: #000000;
     font-size: 22px;
     margin-right: 10px;
-  }
-  #portfolio__project .project__content-grid ul li .project__title,
-  #portfolio__project .project__content-list ul li .project__title {
-    font-size: 25px;
   }
   #portfolio__project .project__content-grid ul li .size__location-btn .sqm__location .square__meter span,
   #portfolio__project .project__content-grid ul li .size__location-btn .sqm__location .place__location span,
@@ -1312,6 +1308,17 @@ body {
   text-align: center;
 }
 
+#portfolio__project .project__content-grid ul li::after,
+#portfolio__project .project__content-list ul li::after {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  background-color: #F7BE00;
+}
+
 #portfolio__project .project__content-grid ul li .project__title,
 #portfolio__project .project__content-list ul li .project__title {
   top: 30px;
@@ -1460,6 +1467,16 @@ body {
   .similar__projects-header h3 {
     font-size: 24px;
   }
+}
+
+.similar__projects-item::after {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  background-color: #F7BE00;
 }
 
 .similar__projects-item .project__title {

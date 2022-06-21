@@ -468,7 +468,7 @@
     ul {
       li {
         .project__title {
-          font-size: 30px;
+          font-size: 24px;
           font-weight: 600;
           text-align: start;
         }
@@ -502,6 +502,8 @@
                 border-color: #F7BE00;
                 background-color: #F7BE00;
               }
+
+             
             }
           }
         }
@@ -511,7 +513,7 @@
 
   .portfolio__project-text {
     p {
-      font-size: 26px;
+      font-size: 18px;
       font-weight: 400;
     }
   }
@@ -571,10 +573,6 @@
     .project__content-list {
       ul {
         li {
-          .project__title {
-            font-size: 25px;
-          }
-
           .size__location-btn {
             .sqm__location {
 

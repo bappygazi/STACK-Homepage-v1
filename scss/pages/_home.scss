@@ -458,6 +458,16 @@
         width: calc(50% - 16px);
         text-align: center;
 
+        &::after {
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          content: '';
+          position: absolute;
+          background-color: #F7BE00;
+        }
+
         .project__title {
           top: 30px;
           left: 40px;
@@ -639,6 +649,15 @@
     }
 
     &-item {
+      &::after {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        content: '';
+        position: absolute;
+        background-color: #F7BE00;
+      }
       .project__title {
         top: 30px;
         left: 40px;
